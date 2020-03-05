@@ -1,0 +1,132 @@
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+button { cursor: pointer; }
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.container-fluid { 
+	padding-left: 0; 
+	padding-right: 0;
+	overflow-x: hidden;
+}
+
+.tm-section {
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 640px;
+}
+
+.tm-section-home { background-image: url(../moreimg/image-01.jpg); }
+button:focus { outline: none; }
+h1, h2, p {	color: white; }
+
+p { 
+	font-weight: 300;
+	line-height: 1.8;
+	margin-bottom: 35px;
+}
+
+.tm-section-title {
+	color: #fdff73;
+	font-size: 1.8rem;
+	margin-bottom: 40px;	
+}
+
+.tm-section-title-big { font-size: 2.2rem; }
+
+
+.tm-hero {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	    -webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	    -webkit-justify-content: center;
+	        justify-content: center;
+	text-align: center;
+	min-height: 640px; 
+}
+
+.tm-hero-title { font-size: 3rem; }
+.tm-hero-subtitle { 
+	font-size: 1.4rem; 
+	margin-bottom: 0;
+}
+
+.tm-hero-title,
+.tm-hero-subtitle {
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tm-bg-black-translucent { background-color: rgba(0, 0, 0, 0.5); }
+
+.tm-content-box {
+	height: 100%;
+	min-height: 640px;
+	max-width: 480px;	
+	padding: 40px;	
+	display: -ms-flexbox;	
+	display: -webkit-flex;	
+	display: flex;   
+	-webkit-flex-direction: column;   
+	    -ms-flex-direction: column;   
+	        flex-direction: column; 
+    -ms-flex-pack: center;    
+        -webkit-justify-content: center;    
+            justify-content: center;
+}
+
+.tm-content-box-right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.tm-page-content-width {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tm-flex-center {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: center;
+        -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.tm-textbox-padding { padding: 50px; }
+.tm-text-black { color: black; }
+.tm-fa { 
+	color: white;
+	padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+.tm-margin-b-0 { margin-bottom: 0; }
+
+
+@media screen and (max-height: 639px) {
+	.tm-section-home,
+	.tm-hero {
+		height: 100vh;
+		min-height: 100%;
+	}
+}
